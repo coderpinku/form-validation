@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <form method="get" class="login--form" name="loginForm" onsubmit="return validateForm();">
+        <div class="h1--login">
+            <h1>Login to continue</h1>
+        </div>
+        <div class="input--value">
+            <input type="email" name="email"
+                placeholder="Enter your Email"
+                 required>
+                <p id="log"></p>
+        </div>
+        <div class="input--value">
+            <input type="password" name="password"
+                placeholder="Enter your password" required>
+        </div>
+        <div class="submit--btn">
+            <button type="submit">Login</button>
+        </div>
+        <div class="pwd--link">
+            <span><a href="#">forgot password?</a></span>
+            <!-- <span class="new--user"><a href="index.html">create new account</a></span> -->
+        </div>
+        <div class="border--line">
+                
+        </div>
+        <div class="login--link">
+           <a href="index.html">Create New Account</a>
+
+        </div>
+    </form>
+    <script>
+        function validateForm(){
+    const email = document.loginForm.email.value;
+    const password = document.loginForm.password.value;
+
+    if(email===null || email==""){
+        alert("Email must be entered!")
+        return false
+    }else if(password.length < 6){
+        alert("Password must be at least 6 characters long!")
+        return false
+    }
+
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp Form</title>
+</head>
+<body>
+    
+        
+    <form action="/" class="signup--form" name="signUpform" onsubmit="return validateForm();">
+        <div class="form--header">
+            <div>
+            <h1>Sign Up</h1>
+            <p>It's easy and fast!</p>
+        </div>
+            <a href="login-page.html"><span class="close--btn">X</span></a>
+        </div>
+        <div class="name--field">
+            <input type="text" name="fname" id="" placeholder="*First Name" required>
+            <input type="text" name="lastname" id="" placeholder="Last Name">
+        </div>
+        <div class="email--field">
+            <input type="email" name="email" id="" placeholder="*E-mail"><br>
+            <input type="number" name="mobile" id="" placeholder="*Mobile number">
+        </div>
+        <div class="gender">
+            <label for=""><span class="star">*</span>Gender:</label><br>
+            <div class="gender--field">
+            <div class="male"><input type="radio" name="gender" value="male" id=""><label>Male</label></div>
+            <div class="male"><input type="radio" name="gender" value="female" id=""><label>Female</label></div>
+            <div class="male"><input type="radio" name="gender" value="other" id=""><label>Others</label>  </div>
+         </div>
+        </div>
+         <div class="email--field">
+            <label for=""><span class="star">*</span>Date of birth:</label><br>
+            <input type="date" name="dob" id="" >
+         </div>
+         <div class="name--field">
+            <input type="password" name="password" id="" placeholder="*Password" >
+            <input type="password" name="cpassword" id="" placeholder="*Confirm Password" >
+         </div>
+         <div class="signup--btn">
+            <button type="submit">SignUp</button>
+            <button type="reset">Reset</button>
+         </div>
+        
+    </form>
+
+</body>
+<script src="index.js"></script>
+</html>
